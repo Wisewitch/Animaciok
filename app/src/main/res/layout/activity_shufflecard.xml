@@ -84,7 +84,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/butt_vissza"
+        android:id="@+id/butt_vissza_s"
         android:layout_marginTop="5sp"
         android:text="vissza"
         />
