@@ -33,7 +33,7 @@ public class ShufflecardActivity extends AppCompatActivity {
         butt_vissza_s.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent vissza = new Intent (ShufflecardActivity.this, FlipcardActivity.class);
+                Intent vissza = new Intent (ShufflecardActivity.this, MainActivity.class);
                 startActivity(vissza);
                 finish();
             }
