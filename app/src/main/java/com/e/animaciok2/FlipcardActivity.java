@@ -18,6 +18,7 @@ public class FlipcardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_flipcard);
 
         init();
+        listeners();
 
     }
     private void flip() {

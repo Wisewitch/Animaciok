@@ -2,6 +2,7 @@ package com.e.animaciok2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button butt_fadein, butt_fadeout, butt_Rotate, butt_zoomin, butt_zoomout, buttbounce, butt_lefttoright, butt_righttoleft, butt_submit;
+    Button butt_fadein, butt_fadeout, butt_Rotate, butt_zoomin, butt_zoomout, buttbounce, butt_lefttoright, butt_righttoleft, butt_submit, butt_tovabb_main;
     EditText et_gondolat;
     TextView tv_gondolatolvaso;
     ImageView IV_ang2, IV_rect, IV_ang3;
@@ -35,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         init();
-
+        listeners();
+    }
 
 
 
@@ -51,6 +53,17 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });*/
+
+        private void listeners() {
+            butt_tovabb_main.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent vissza = new Intent (MainActivity.this,  FlipcardActivity.class);
+                    startActivity(vissza);
+                    finish();
+                }
+            });
+
 
         butt_fadein.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -138,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
         et_gondolat = findViewById(R.id.et_gondolat);
         tv_gondolatolvaso = findViewById(R.id.tv_gondolatolvaso);
         butt_submit = findViewById(R.id. butt_submit);
-
+        butt_tovabb_main = findViewById(R.id.butt_tovabb_main);
 
 
 

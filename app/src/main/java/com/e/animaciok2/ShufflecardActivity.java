@@ -18,6 +18,7 @@ public class ShufflecardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_shufflecard);
 
         init();
+        listeners();
 
     }
     private void shuffle() {
