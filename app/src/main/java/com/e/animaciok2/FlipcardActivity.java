@@ -9,7 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class FlipcardActivity extends AppCompatActivity {
-    Button butt_flipcard, butt_vissza_fc;
+    Button butt_flipcard, butt_vissza_fc, butt_tovabb_flip;
+
     ImageView IV_card;
 
     @Override
@@ -39,11 +40,21 @@ public class FlipcardActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        butt_tovabb_flip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent vissza = new Intent (FlipcardActivity.this, ShufflecardActivity.class);
+                startActivity(vissza);
+                finish();
+            }
+        });
     }
 
     private void init() {
         butt_flipcard = findViewById(R.id.butt_flipcard);
         butt_vissza_fc = findViewById(R.id.butt_vissza_fc);
+        butt_tovabb_flip = findViewById(R.id.butt_tovabb_flip);
         IV_card = findViewById(R.id.IV_card);
 
 
