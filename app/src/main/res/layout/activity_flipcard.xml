@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlipcardActivity">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="100sp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300sp"
+            android:id="@+id/IV_ang3"
+            android:background="@drawable/angyal11"
+            android:layout_marginTop="60sp"
+            android:contentDescription="@string/card1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearL_Buttonrow1"
+        android:orientation="vertical"
+        android:layout_marginTop="20sp"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/butt_flipcard"
+            android:text="Flip card"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/butt_vissza"
+            android:text="vissza"
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

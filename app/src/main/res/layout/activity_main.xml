@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50sp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/IV_ang3"
+            android:background="@drawable/angyal11"
+            android:layout_marginTop="20sp"
+            android:contentDescription="@string/card1" />
+
+        <ImageView
+            android:id="@+id/IV_ang2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-50sp"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/angyal1"
+            android:contentDescription="@string/card2"
+            android:layout_marginStart="-50sp" />
+
+        <ImageView
+            android:id="@+id/IV_rect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-50sp"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/rectangle"
+            android:contentDescription="@string/card2"
+            android:layout_marginStart="-50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearL_Buttonrow1"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butt_fadein"
+            android:text="Fadein"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butt_fadeout"
+            android:text="Fadeout"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butt_Rotate"
+            android:text="Rotate"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butt_righttoleft"
+            android:text="Right to left"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearL_Buttonrow2"
+        android:orientation="horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_below="@id/linearL_Buttonrow1"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butt_zoomin"
+            android:text="Zoomin"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butt_zoomout"
+            android:text="Zoomout"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttbounce"
+            android:text="Bounce"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butt_lefttoright"
+            android:text="Left to right"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearL_Buttonrow2"
+        android:textSize="20dp"
+        android:hint="Ide írd, hogy mire gondolsz... "
+        android:inputType="text"
+        android:id="@+id/et_gondolat"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginTop="5sp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_gondolat"
+        android:id="@+id/butt_submit"
+        android:text="Elküld"
+
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Erre gondoltál: "
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/butt_submit"
+        android:id="@+id/tv_gondolatolvaso"
+        android:layout_marginTop="5sp"
+        android:padding="5dp"
+        android:textSize="25sp"/>
+
+
+
+</RelativeLayout>

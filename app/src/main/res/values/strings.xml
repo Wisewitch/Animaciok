@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Animaciok2</string>
+    <string name="rotate">Rotate</string>
+    <string name="fadeout">Fade out</string>
+    <string name="fadein">Fade In</string>
+    <string name="card1">card1</string>
+    <string name="card2">card2</string>
+</resources>
